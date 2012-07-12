@@ -12,9 +12,11 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
-        ((TextView) findViewById(R.id.model)).setText(android.os.Build.MODEL);
-        ((TextView) findViewById(R.id.product)).setText(android.os.Build.PRODUCT);
-        ((TextView) findViewById(R.id.brand)).setText(android.os.Build.BRAND);
+        ((TextView) findViewById(R.id.text1)).setText(
+        		"model: " + android.os.Build.MODEL +
+        		"\nproduct: " + android.os.Build.PRODUCT +
+        		"\nbrand: " + android.os.Build.BRAND
+		);
     }
 
     @Override
